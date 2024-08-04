@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña - DataSpectrum</title>
+    <link rel="stylesheet" href="nuevoEstiloMulticolor.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="regresar-container">
+    <a href="login.php" class="btn-secondary regresar">Regresar</a>
+</div>
+        <div class="title-container2">
+        <h2>Recuperar contraseña</h2>
+        <form action="cambiar_contrasena.php" method="post">
+            </div>
+            <div class="login-container">
+            <div class="input-container">
+                <input type="email" name="correo" required>
+                <label>Correo electrónico</label>
+            </div>
+            <div class="input-container">
+                <input type="password" name="nueva_contrasena" required>
+                <label>Nueva contraseña</label>
+            </div>
+            <div class="input-container">
+                <input type="password" name="confirmar_contrasena" required>
+                <label>Confirmar nueva contraseña</label>
+            </div>
+            <button type="submit" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Cambiar contraseña
+            </button>
+        </form>
+    </div>
+</body>
+</html>
+
+        <style>
+            .container {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                padding: 40px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+                max-width: 800px;
+                width: 100%;
+            }
+
+            .btn {
+                background: rgba(255,255,255,0.1);
+                border: none;
+                padding: 12px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.5s;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 15px;
+            }
+
+            .btn:hover {
+                background: rgba(255,255,255,0.2);
+                box-shadow: 0 0 10px rgba(255,255,255,0.2);
+            }
+
+            body {
+                color: black;
+            }
+        </style>
